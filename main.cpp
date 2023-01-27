@@ -6,16 +6,17 @@ using namespace std;
 int main() {
     system("clear");
     cout << "something something\n";
-    cout << "1. New Save\n";
-    cout << "2. Load Save\n";
+    cout << "1. Load Save\n";
+    cout << "2. New Save\n";
     int choice;
     cin >> choice;
+    string saveString;
     switch(choice) {
         case 1:
-            setup();
+            load();
             break;
         case 2:
-            newSave();
+            saveString = newSave();
             break;
         default:
             system("clear");
